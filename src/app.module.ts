@@ -4,6 +4,7 @@ import { PhotoModule } from './photo/photo.module';
 
 @Module({
   imports: [
+    
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -21,3 +22,7 @@ import { PhotoModule } from './photo/photo.module';
   ],
 })
 export class AppModule {}
+function Config(): import("@nestjs/common").Type<any> | import("@nestjs/common").DynamicModule | Promise<import("@nestjs/common").DynamicModule> | import("@nestjs/common").ForwardReference<any> {
+  throw new Error('Function not implemented.');
+}
+
